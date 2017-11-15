@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Lab 7 - Basic JavaScript Event Handling and DOM</title>
+	<title>Lab 6 - Basic JavaScript Event Handling and DOM</title>
 	<style type="text/css">
 		.center {
 			text-align: center;
@@ -27,7 +27,7 @@
 	</style>
 </head>
 <body>
-	<h1 class="center">ITMD-361 - Lab 7 - Basic JavaScript Event Handling and DOM</h1>
+	<h1 class="center">ITMD-361 - Lab 6 - Basic JavaScript Event Handling and DOM</h1>
 	<h2 class="center">Jimmy Tran</h2>
 	<h3 class="center">jtran8@hawk.iit.edu</h3>
 	<div id="container">
@@ -36,12 +36,13 @@
 		<h2 id="textoutput" class="center">Show results here</h2>
 	</div>
 	<script type="text/javascript">
+    entrybutton.addEventListener('click', method);
 		function method() {
       var textbox = document.getElementById("entryinput").value;
       alert("Jimmy Tran: " +textbox);
       document.getElementById("textoutput").innerHTML = textbox;
     }
-    entrybutton.onclick = method;
+    //entrybutton.onclick = method;
 	</script>
 </body>
 </html>
